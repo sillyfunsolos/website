@@ -20,24 +20,23 @@
         .text {
             font-size: 5em;
             color: white;
-            text-shadow: 0 0 5px rgba(255,0,0,0.7), 0 0 10px rgba(255,0,0,0.7), 0 0 15px rgba(255,0,0,0.7);
-            animation: colorChange 3s infinite alternate;
+            animation: colorChange 5s infinite linear;
         }
         @keyframes colorChange {
-            0% { color: rgb(255,0,0); }
-            25% { color: rgb(0,255,0); }
-            50% { color: rgb(0,0,255); }
-            75% { color: rgb(255,255,0); }
-            100% { color: rgb(255,0,255); }
+            0% { color: red; }
+            25% { color: green; }
+            50% { color: blue; }
+            75% { color: yellow; }
+            100% { color: magenta; }
         }
     </style>
 </head>
 <body>
     <div class="text">CHARGE99XHG</div>
-    <!-- Add your audio element here when you have the path -->
-    <!-- <audio autoplay loop>
-        <source src="/website/blob/main/bad.mp3" type="audio/mpeg">
+    <audio autoplay loop>
+        <!-- Replace 'your-audio-path.mp3' with the actual path to your MP3 file -->
+        <source src="https://github.com/Okayletsleeo/website/blob/main/bad.mp3" type="audio/mp3">
         Your browser does not support the audio element.
-    </audio> -->
+    </audio>
 </body>
 </html>
