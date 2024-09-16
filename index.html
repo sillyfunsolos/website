@@ -15,33 +15,29 @@
             align-items: center;
             background: url('https://media.tenor.com/TZaIBNauQfAAAAAC/stars-galaxy.gif') no-repeat center center fixed;
             background-size: cover;
+            font-family: 'Minecraft', sans-serif;
         }
         .text {
-            font-family: 'Minecraft', sans-serif;
             font-size: 5em;
             color: white;
-            text-shadow: 
-                0 0 5px rgb(255,0,0), 
-                0 0 10px rgb(255,0,0), 
-                0 0 15px rgb(255,0,0), 
-                0 0 20px rgb(0,255,0), 
-                0 0 30px rgb(0,255,0), 
-                0 0 40px rgb(0,0,255), 
-                0 0 50px rgb(0,0,255);
-            text-align: center;
-            z-index: 1;
-            position: relative;
+            text-shadow: 0 0 5px rgba(255,0,0,0.7), 0 0 10px rgba(255,0,0,0.7), 0 0 15px rgba(255,0,0,0.7);
+            animation: colorChange 3s infinite alternate;
         }
-        audio {
-            display: none;
+        @keyframes colorChange {
+            0% { color: rgb(255,0,0); }
+            25% { color: rgb(0,255,0); }
+            50% { color: rgb(0,0,255); }
+            75% { color: rgb(255,255,0); }
+            100% { color: rgb(255,0,255); }
         }
     </style>
 </head>
 <body>
     <div class="text">CHARGE99XHG</div>
-    <audio autoplay loop>
-        <source src="https://github.com/Okayletsleeo/website/blob/main/bad.mp3" type="audio/mpeg">
+    <!-- Add your audio element here when you have the path -->
+    <!-- <audio autoplay loop>
+        <source src="your-audio-path.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
-    </audio>
+    </audio> -->
 </body>
 </html>
