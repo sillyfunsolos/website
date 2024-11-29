@@ -1,1 +1,0 @@
-game:GetService("ReplicatedStorage"):WaitForChild("MainEvent"):FireServer("UpdateMousePos", Vector3.new(0, 0, 0))
